@@ -1,0 +1,16 @@
+.main-links{
+    
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.sublinksInsta{
+    text-decoration: none;
+    color: red;
+}
+.sublinksLinkdin{
+    color: blue;
+}
+.sublinksgithub{
+    color: purple;
+}

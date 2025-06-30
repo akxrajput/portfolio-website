@@ -1,0 +1,50 @@
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.Cname{
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+}
+.Cemail
+{
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+}
+.Cmessage{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+}
+.Csend{
+    height: 35px;
+    width: 120px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.Csend:hover{
+    background-color: yellow;
+}
+.Ch1{
+    margin-top: 10px;
+    color: yellow;
+}
+@media screen and (max-width: 428px) {
+    .contactform {
+        padding: 10px;
+    }
+
+    .Cname, .Cemail, .Cmessage, .Csend {
+        width: 90%;
+        max-width: 400px;
+    }
+}
