@@ -1,16 +1,28 @@
-.main-links{
-    
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+.main-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
-.sublinksInsta{
-    text-decoration: none;
-    color: red;
+
+.sublink {
+  font-size: 2.5rem;
+  color: #ccd6f6;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
-.sublinksLinkdin{
-    color: blue;
+
+.sublink:hover {
+  transform: scale(1.2);
 }
-.sublinksgithub{
-    color: purple;
+
+.sublink-insta:hover {
+  color: #e1306c;
+}
+
+.sublink-linkedin:hover {
+  color: #0a66c2;
+}
+
+.sublink-github:hover {
+  color: #6e5494;
 }

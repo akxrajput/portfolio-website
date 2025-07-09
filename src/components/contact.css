@@ -1,50 +1,67 @@
-.contactform{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
+.contactform {
+  background-color: #0a192f;
+  color: #ccd6f6;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
 }
-.Cname{
-    height: 35px;
-    width: 400px;
-    border-radius: 5px;
-}
-.Cemail
-{
-    height: 35px;
-    width: 400px;
-    border-radius: 5px;
-}
-.Cmessage{
-    width: 400px;
-    height: 100px;
-    border-radius: 10px;
-}
-.Csend{
-    height: 35px;
-    width: 120px;
-    margin-top: 20px;
-    border: none;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    font-weight: 600;
-}
-.Csend:hover{
-    background-color: yellow;
-}
-.Ch1{
-    margin-top: 10px;
-    color: yellow;
-}
-@media screen and (max-width: 428px) {
-    .contactform {
-        padding: 10px;
-    }
 
-    .Cname, .Cemail, .Cmessage, .Csend {
-        width: 90%;
-        max-width: 400px;
-    }
+.Ch1 {
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.Cdesc {
+  margin-bottom: 1rem;
+  color: #8892b0;
+}
+
+.contactform label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #112240;
+  color: #ccd6f6;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  box-shadow: 0 0 0 2px #64ffda;
+}
+
+.Csend {
+  margin-top: 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Csend:hover {
+  background-color: #1d4ed8;
+}
+
+@media screen and (max-width: 500px) {
+  .contactform {
+    padding: 2rem 1rem;
+  }
 }

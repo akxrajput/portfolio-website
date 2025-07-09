@@ -1,68 +1,63 @@
-/* Default styles for larger screens */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    width: 100%;
-   
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background-color: #0a192f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    height: 70px;
-    width: 140px;
-    margin-left: 20px;
+  height: 50px;
+}
+
+.nav-menu-main {
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-menu {
-    margin: 1rem;
-    cursor: pointer;
-    border-bottom: 2px solid yellow;
-    padding-bottom: 5px;
-}
-
-.nav-btn {
-    height: 35px;
-    width: 100px;
-    text-decoration: none;
-    border: none;
-    font-size: small;
-    text-align: center;
-    border-radius: 25px;
-    margin-right: 20px;
-    font-weight: bolder;
+  color: #ccd6f6;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none;
 }
 
 .nav-menu:hover {
-    color: rgb(208, 255, 0);
+  color: #64ffda;
+}
+
+.nav-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 .nav-btn:hover {
-    background-color: yellow;
-}
-.nav-btn a{
-    text-decoration: none;
-    
+  background-color: #1d4ed8;
 }
 
+@media screen and (max-width: 768px) {
+  .nav-menu-main {
+    display: none;
+  }
 
-@media (max-width: 414px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .logo {
-        margin: 10px auto;
-    }
-
-    .nav-menu {
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .nav-btn {
-        width: 100%;
-        margin: 10px 0;
-    }
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
 }

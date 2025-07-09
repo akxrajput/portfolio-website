@@ -1,29 +1,24 @@
-import React from 'react'
-import {Button, Link} from 'react-scroll';
-import weblogo from "./weblogo.png"
+import React from 'react';
+import { Link } from 'react-router-dom'; // ✅ Import from React Router
 import './Navbar.css';
-
 
 const Navbar = () => {
   return (
-    <nav className='navbar' style={{ color:"white"}}>
+    <nav className='navbar'>
+      {/* Logo and menu */}
+      <div className='nav-menu-main'>
+        <a className='nav-menu' href="#home">HOME</a>
+        <a className='nav-menu' href="#clients">CLIENTS</a>
+        <a className='nav-menu' href="#about">ABOUT</a>
+        <a className='nav-menu' href="#portfolio">PORTFOLIO</a>
+      </div>
 
-        {/* image part of website */}
-        <img   src={weblogo} className='logo' alt='logo'/>
-
-        <div className='nav-menu-main'>
-          <Link className='nav-menu'>HOME</Link>
-          <Link className='nav-menu'>CLIENTS</Link>
-          <Link className='nav-menu'>ABOUT</Link>
-          <Link className='nav-menu'>PORTFOLIO</Link>
-        </div>
-
-        <button className='nav-btn'>
-           <a href="https://linkedin.com/in/akshay-girase-318136246"> <img src=""   className='nav-btn-img'/>Contact Me</a> 
-        </button>
-
+      {/* ✅ Resume Button using React Router Link */}
+      <button className='nav-btn'>
+        <Link to="/resume" className='nav-link'>Resume</Link>
+      </button>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
