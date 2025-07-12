@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 //motion framer-motion is used for animations
+// dummy change
 const Blog = () => {
   const posts = [
     {
